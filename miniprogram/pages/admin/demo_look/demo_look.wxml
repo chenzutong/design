@@ -1,0 +1,22 @@
+<view>
+  <view>
+    <text class='row box'>开屏样式：{{lookDemo.screen}}</text>
+    <text class='row box'>信息流样式：{{lookDemo.feed}}</text>
+    <text class='row box'>落地页链接/文章链接：{{lookDemo.link}}</text>
+    <text class='row box'>广告来源：{{lookDemo.source}}</text>
+    <text class='row box'>广告标题：{{lookDemo.title}}</text>
+    <text class='row box'>广告描述：{{lookDemo.describe}}</text>
+  </view>
+  <view>
+    <form  bindsubmit="stateDemo">
+        <textarea hidden="ture" name='state' auto-height value='passed'></textarea>
+        <button   class="button-blue" hover-class='button-white' form-type='submit'>通过</button>
+    </form>
+    <form  bindsubmit="stateDemo">
+        <textarea hidden="ture" name='state' auto-height value='failed'></textarea>
+        <button  class="button-blue" hover-class='button-white' form-type='submit'>不通过</button>
+    </form>
+    
+      
+  </view>
+</view>

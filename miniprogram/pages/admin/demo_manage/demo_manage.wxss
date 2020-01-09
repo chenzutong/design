@@ -1,0 +1,4 @@
+/* pages/admin/demo_manage/demo_manage.wxss */
+page{
+  background-color:#ededed;
+}

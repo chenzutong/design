@@ -1,0 +1,49 @@
+<view>
+
+<!-- 轮播图 -->
+<view class="slider-wrapper">
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"
+   interval="{{interval}}" duration="{{duration}}" indicator-active-color="#2577e3">
+      <block wx:for="{{imgUrls}}"  wx:key="unique">
+        <swiper-item hover-class="navigator-hover">
+            <image src="{{item.url}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+</swiper>
+</view>
+
+<view class="content1">
+<view class="left">
+  <image class="tz" src="/images/tz.jpg"></image>
+  <text decode="{{true}}" class="tzt">&ensp;&ensp;&ensp;最新消息\n</text>
+</view>
+<view class="content2">
+  <text class="title1">需求表消息</text>
+  <view wx:for='{{demandlist}}' wx:key="unique">
+    <view wx:if="{{item.demandID}}" class="content3">
+      <text>需求单编号：{{item.demandID}}\n</text>
+      <text>状态：{{item.state}}\n</text>
+    </view>
+  </view>
+</view>
+<view class="content2">
+  <text class="title1">素材表消息</text>
+  <view wx:for='{{demolist}}' wx:key="unique">
+    <view wx:if="{{item.demandID}}" class="content3">
+      <text>对应需求：{{item.demandID}}\n</text>
+      <text>状态：{{item.state}}\n</text>
+    </view>
+  </view>
+</view>
+<view class="content2">
+  <text class="title1">下单表消息</text>
+  <view wx:for='{{orderlist}}' wx:key="unique">
+    <view wx:if="{{item.demandID}}" class="content3">
+      <text>对应需求：{{item.demandID}}\n</text>
+      <text>状态：{{item.state}}\n</text>
+    </view>
+  </view>
+</view>
+</view>
+
+</view>

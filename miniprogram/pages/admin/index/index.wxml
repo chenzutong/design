@@ -1,0 +1,36 @@
+<view>
+  <!-- 轮播图 -->
+<view class="slider-wrapper">
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}"
+   interval="{{interval}}" duration="{{duration}}" indicator-active-color="#2577e3">
+      <block wx:for="{{imgUrls}}"  wx:key="unique">
+        <swiper-item hover-class="navigator-hover">
+            <image src="{{item.url}}" class="slide-image" width="355" height="150" />
+        </swiper-item>
+      </block>
+</swiper>
+</view>
+  <view class="libin">
+  <view class="item" catchtap="toDemand">
+   <image class="imgfenbu" src="/images/demand.jpg"></image> 
+   <text class='ltext'>需求管理</text>
+  </view>
+  <view class="item" catchtap="toDemo">
+   <image class="imgfenbu" src="/images/demo.jpg"></image> 
+   <text class='ltext'>素材管理</text>
+  </view>
+  <view class="item" catchtap="toOrder">
+   <image class="imgfenbu" src="/images/order.jpg"></image> 
+   <text class='ltext'>下单管理</text>
+  </view>
+  <view class="item" catchtap="toUser">
+   <image class="imgfenbu" src="/images/user.jpg"></image> 
+   <text class='ltext'>用户管理</text>
+  </view>
+  </view>
+<view class='tuichu' bindtap='exit'>
+  <text class='right'>退出：  >>></text>
+</view>
+</view>
+
+

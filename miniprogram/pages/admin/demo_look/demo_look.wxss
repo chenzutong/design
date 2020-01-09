@@ -1,0 +1,51 @@
+
+
+.box{
+  border: 2rpx solid white;
+  color:black;  /*字体颜色*/
+  margin: 30rpx;
+  padding: 20rpx;
+  box-shadow:0 1rpx 1rpx 1rpx#15161646;
+  border-radius: 3%;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  background: white;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
+.button-blue{
+  width: 90%;
+  height: 70rpx;
+  background-color: white;
+  color: #2577e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30rpx;
+  box-shadow:0 3rpx 5rpx 4rpx  #2577e3;
+  margin-left: 40rpx;
+}
+.button-white{
+  width:90%;
+  height: 70rpx;
+  margin: 30rpx;
+  background-color: #2577e3;
+  margin-left:40rpx;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:0 3rpx 5rpx 4rpx  #2577e3;
+}
+
+page{
+  background-color:#ededed;
+}

@@ -1,0 +1,28 @@
+<view>
+  <view>
+    <text class='row box'>广告主名称：{{lookDemand.ader_name}}\n</text>
+    <text class='row box'>投放平台：{{lookDemand.platform}}\n</text>
+    <text class='row box'>产品名称：{{lookDemand.product}}\n</text>
+    <text class='row box'>投放城市：{{lookDemand.city}}\n</text>
+    <text class='row box'>广告位置：{{lookDemand.position}}\n</text>
+    <text class='row box'>定向年龄人群：{{lookDemand.age}}\n</text>
+    <text class='row box'>定向性别：{{lookDemand.sex}}\n</text>
+    <text class='row box'>投放时间：{{lookDemand.date}}\n</text>
+    <text class='row box'>购买方式：{{lookDemand.unit}}\n</text>
+    <text class='row box'>购买单位：{{lookDemand.amount}}\n</text>
+    <text class='row box'>投放总额：{{lookDemand.total}}\n</text>
+    <text class='row box'>备注：{{lookDemand.notes}}\n</text>
+  </view>
+  <view class="content5">
+    <form  bindsubmit="stateDemand">
+        <textarea hidden="ture" name='state' auto-height value='passed'></textarea>
+        <button  class="button-blue" hover-class='button-white'form-type='submit'>通过</button>
+    </form>
+    <form  bindsubmit="stateDemand">
+        <textarea hidden="ture" name='state' auto-height value='failed'></textarea>
+        <button class="button-blue" hover-class='button-white' form-type='submit'>不通过</button>
+    </form>
+    
+      
+  </view>
+</view>

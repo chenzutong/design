@@ -1,0 +1,58 @@
+@import 'style/weui.wxss';
+
+.nav-name{
+    display:inline-block;
+    line-height: 80rpx;
+    font-size:40rpx;
+    color: black;
+    border-bottom: 9rpx solid transparent;
+    text-align: center;
+    flex: 1;
+}
+.nav-hover{
+    color: #2577e3;
+    border-bottom: 9rpx solid #2577e3;
+}
+.nav-scroll{
+    display: flex;
+    white-space:nowrap;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 0.5rem;
+    height: 87rpx;
+    border-bottom: 2rpx solid #e7e7e7;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.box{
+  border: 2rpx solid white;
+  color:black;  /*字体颜色*/
+  margin: 30rpx;
+  padding: 20rpx;
+  box-shadow:0 1rpx 1rpx 1rpx#07070741;
+  border-radius: 3%;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  background: white;
+}
+
+.demand{
+  color: #2577e3;
+  text-align: center;
+  font-size:35rpx;
+  font-weight: bold;
+}
+
+.button4 {
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+  height: 80rpx;
+  width: 300rpx;
+  color: white;
+  background-color: #2577e3;
+}

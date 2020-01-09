@@ -1,0 +1,76 @@
+page{
+  background: linear-gradient(#2577e3,white)
+}
+
+
+button{
+  background-color: #ff2d55;
+  width: 40%;
+  color: white;
+  margin: 20rpx;
+}
+image{
+    position: relative;
+    width: 100%;
+    height: 200rpx;
+    overflow: hidden;
+    margin-bottom: 24rpx;
+}
+.imgfenbu{
+  margin-left: 25rpx;
+  width: 200rpx;
+  height: 400rpx;
+}
+.libin{
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap:wrap;
+  width: 100%;
+  justify-content: flex-start;
+  align-content: center;
+  color: #7c7c7c
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /* margin-left: 20rpx;
+  margin-right: 20rpx; */
+  margin: 20rpx;
+  height: 250rpx;
+  margin-left: 75rpx;
+  width: 250rpx;
+  text-align: center;
+  padding: 40rpx 0;
+  font-size: 30rpx;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.664);
+  border-radius: 20rpx;
+  background-color: rgba(255,255,255, 0.9)
+}
+.tuichu{
+  
+  height: 70rpx;
+  margin: 20rpx;
+  display: flex;
+  border-radius: 20rpx;
+}
+
+.right{
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  color: #ccc;
+  margin-right: 20rpx;
+}
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 350rpx;
+    overflow: hidden;
+    margin-bottom: 24rpx;
+}
+.slide-image, swiper {
+  width: 100%;
+  height: 350rpx;
+}

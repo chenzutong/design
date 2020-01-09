@@ -1,0 +1,101 @@
+/* pages/form/form.wxss */
+/*表单、多行文本框样式*/
+form,textarea{
+  width: 100%;
+}
+/*文本输入框样式*/
+.shortInput{
+  width: 100rpx;
+}
+.longInput{
+  width: 200rpx;
+}
+
+
+button{
+  background-color: #33a3dc;
+  color: white;
+  margin: 20rpx;
+  margin-top: 10rpx;
+}
+
+label{
+  color: #2577e3;
+  margin-right: 25rpx;
+  font-weight:blod;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}.box{
+  border: 2rpx solid white;
+  color:black;  /*字体颜色*/
+  margin: 30rpx;
+  padding: 20rpx;
+  box-shadow:0 1rpx 1rpx 1rpx#15161646;
+  border-radius: 3%;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  background: white;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  border-bottom: 1rpx solid silver;/*1rpx宽的银色实线下边框*/
+  border-top: 1rpx solid  silver;
+  border-left: 1rpx solid  silver;
+  border-right: 1rpx solid  silver;
+  margin: 10rpx 20rpx;/*上下外边距10rpx，左右外边距20rpx*/
+  padding: 10rpx;/*内边距*/
+}
+
+text{
+  margin-right: 25rpx;
+}
+/*主容器*/  
+.stepper {  
+    width:180rpx;  
+    height: 52rpx;  
+    /*给主容器设一个边框*/  
+    border: 1rpx solid #818284;  
+    border-radius: 3px;  
+    background: white;
+}  
+  
+/*加号和减号*/  
+.stepper .sign {  
+    width: 35rpx;  
+    line-height: 52rpx;  
+    text-align: right;  
+    
+    float: left;  
+}  
+  
+/*数值*/  
+.stepper .number {  
+    width: 60rpx;  
+    height: 20rpx;  
+    float: left;  
+    text-align: center; 
+    color: #000000;
+    /*给中间的input设置左右边框即可*/  
+    border-left: 1rpx solid #818284;  
+    border-right: 1rpx solid #818284;  
+}  
+  
+/*普通样式*/  
+.stepper .normal{  
+    color: black;  
+}  
+/*禁用样式*/  
+.stepper .disabled{  
+    color: #ccc;  
+}  
+page{
+  background-color:#ededed;
+}

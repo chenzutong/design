@@ -1,0 +1,83 @@
+<form bindsubmit='submitForm'>
+  <view class='row box'>
+    <label>广告主名称：</label>
+    <input name='ader_name' class='longInput' type='ader_name' value='{{tel}}'></input>
+  </view>
+  <view class='row box'>
+    <label>投放平台：</label>
+    <picker name='platform' range='{{platformItems}}' bindchange='platformChange' value='{{platform}}'>
+      <view>{{platform}}</view>
+    </picker>
+  </view>
+  <view class='row box'>
+    <label>产品名称：</label>
+    <picker name='product' range='{{productItems}}' bindchange='productChange' value='{{product}}'>
+      <view>{{product}}</view>
+    </picker>
+  </view>
+  <view class='row box'>
+    <label>投放城市：</label>
+    <picker name='city' mode="multiSelector" range="{{cityArray}}" bindchange='cityChange' value='{{cityIndex}}' bindcolumnchange="cityColumnChange">
+      <view>{{cityArray[1][cityIndex[1]]}}</view>
+    </picker>
+  </view>
+  <view wx:if='{{product == "开屏广告"}}' class='row box'>
+    <label>广告位置：</label>
+    <picker name='position' range='{{position1Items}}' bindchange='position1Change' value='{{position1}}'>
+      <view>{{position1}}</view>
+    </picker>
+  </view>
+  <view wx:if='{{product == "信息流广告"}}' class='row box'>
+    <label>广告位置：</label>
+    <picker name='position' range='{{position2Items}}' bindchange='position2Change' value='{{position2}}'>
+      <view>{{position2}}</view>
+    </picker>
+  </view>
+  <view class='row box'>
+    <label>定向年龄人群：</label>
+    <picker name='age' range='{{ageItems}}' bindchange='ageChange' value='{{age}}'>
+      <view>{{age}}</view>
+    </picker>
+  </view>
+  <view class='row box'>
+    <label>定向性别：</label>
+    <radio-group  name='sex' class="radio-group" bindchange="radioChange">
+      <radio wx:for-items="{{sexes}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+        <text>{{item.value}}</text>
+      </radio>
+    </radio-group>
+  </view>
+  <view class='row box'>
+    <label>投放时间：</label>
+    <picker name="date" mode='date' start="2019-01-01" end="2020-12-30" bindchange='dateChange' value='{{date}}'>
+      <view>{{date}}</view>
+    </picker>
+  </view>
+  <view class='row box'>
+    <label>购买方式：</label>
+    <picker name='unit' range='{{unitItems}}' bindchange='unitChange' value='{{unit}}'>
+      <view>{{unit}}</view>
+    </picker>
+  </view>
+  <view class='row box'>
+    <label>购买单位：</label>
+    <view class="stepper"> 
+    <!-- 减号 -->  
+      <text name='amount' class="sign {{amount <= 1 ? 'disabled' : 'normal'}}" bindtap="delCount" data-index="{{index}}">-</text>  
+      <!-- 数值 -->  
+      <input class="number" name='amount' type="number" bindchange="amountChange" value="{{amount}}"  disabled="disabled"/>  
+      <!-- 加号 -->  
+      <text name='amount' class="sign {{amount >= 10 ? 'disabled' : 'normal'}}" bindtap="addCount" data-index="{{index}}">+</text> 
+    </view>  
+  </view>
+   <view class='row box'>
+    <label>投放总额：</label>
+    <input name='total' type="number" class='shortInput' type='digit' value='{{total}}'></input>
+    <text>元</text>
+  </view>
+  <view class='col box'>
+    <label>备注：</label>
+    <textarea name='notes' auto-height value='{{notes}}'></textarea>
+  </view>
+  <button form-type='submit'>提交</button>
+</form>

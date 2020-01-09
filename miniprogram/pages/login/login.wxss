@@ -1,0 +1,91 @@
+.content{
+  height: 600rpx;
+  margin: 70rpx;
+  margin-top: 40px;
+  border-radius: 20rpx;
+  background-color: rgba(255, 255, 255, 0.96);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+
+.account{
+   display: flex;
+   flex-direction: row;
+   padding-left: 20px;
+   padding-top: 20px;
+   padding-bottom: 10px;
+   width: 90%;
+}
+
+.img1{
+  height: 100rpx;
+  width: 100rpx;
+}
+.title{
+  margin-right: 30px;
+  font-weight: bold;
+  color: #7a7a7a;
+}
+.inp{
+  height: 60rpx;
+  width: 60%;
+  background-color: white;
+  padding-left: 20rpx;
+  padding-top: 18rpx;
+  box-shadow:0 1rpx 1rpx 1rpx#07070741;
+  border-radius: 15rpx;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.button-blue{
+  margin-right: 177rpx;
+  width: 70%;
+  background-color: white;
+  color: #2577e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:0 3rpx 5rpx 4rpx  #2577e3;
+}
+.button-white{
+  margin-right: 177rpx;
+  width: 70%;
+  background-color: #2577e3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:0 3rpx 5rpx 4rpx  #2577e3;
+}
+.adbutton{
+  width: 100%;
+  margin-top: 30rpx;
+  margin-left: 85rpx;
+}
+
+page{
+  background: linear-gradient(#2577e3,white)
+}
+
+.zhi{
+  font-size: 50rpx;
+  color: #ffffff;
+  margin-top: 30rpx; 
+  text-align: center;
+  font-weight: 550; 
+}
+
+.tuichu{
+  
+  height: 70rpx;
+  margin: 20rpx;
+  display: flex;
+}
+
+.right{
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  color: rgb(129, 129, 129);
+  margin-right: 20rpx;
+}

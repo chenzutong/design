@@ -1,0 +1,26 @@
+
+  <view>
+    <text class='row box'>广告主名称：{{lookOrder.ader_name}}</text>
+    <text class='row box'>投放平台：{{lookOrder.platform}}</text>
+    <text class='row box'>产品名称：{{looOrder.product}}</text>
+    <text class='row box'>投放城市：{{lookOrder.city}}</text>
+    <text class='row box'>广告位置：{{lookOrder.position}}</text>
+    <text class='row box'>定向年龄人群：{{lookOrder.age}}</text>
+    <text class='row box'>定向性别：{{lookOrder.sex}}</text>
+    <text class='row box'>投放时间：{{lookOrder.date}}</text>
+    <text class='row box'>购买方式：{{lookOrder.unit}}</text>
+    <text class='row box'>购买单位：{{lookOrder.amount}}</text>
+    <text class='row box'>投放总额：{{lookOrder.total}}</text>
+    <text class='row box'>开屏样式：{{lookOrder.screen}}</text>
+    <text class='row box'>信息流样式：{{lookOrder.feed}}</text>
+    <text class='row box'>落地页链接/文章链接：{{looOrder.link}}</text>
+    <text class='row box'>广告来源：{{lookOrder.source}}</text>
+    <text class='row box'>广告标题：{{lookOrder.title}}</text>
+    <text class='row box'>广告描述：{{lookOrder.describe}}</text>
+  </view>
+  <view>
+    <form  bindsubmit="stateOrder">
+        <textarea hidden="ture" name='state' auto-height value='passed'></textarea>
+        <button class="button-blue" hover-class='button-white' form-type='submit'>确认下单</button>
+    </form>
+  </view>

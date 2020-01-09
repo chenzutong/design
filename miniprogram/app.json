@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/user/index/index",
+    "pages/admin/usermanage/usermanage",
+    "pages/admin/order_manage/order_manage",
+    "pages/admin/index/index",
+    "pages/user/addOrder/addOrder",
+    "pages/user/order/order",
+    "pages/admin/demo_look/demo_look",
+    "pages/admin/demo_manage/demo_manage",
+    "pages/user/addDemo/addDemo",
+    "pages/admin/demand_manage/demand_manage",
+    "pages/admin/demand_look/demand_look",
+    "pages/user/demand/demand",
+    "pages/user/addDemand/addDemand",
+    "pages/user/userhome/userhome",
+    "pages/user/demo/demo"
+  ],
+  "window": {
+    "backgroundColor": "#2577e3",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2577e3",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a9a6a7",
+    "selectedColor": "#2577e3",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/user/demand/demand",
+        "text": "需求",
+        "iconPath": "images/icon/order.png",
+        "selectedIconPath": "images/icon/order_selected.png"
+      },
+      {
+        "pagePath": "pages/user/demo/demo",
+        "text": "素材",
+        "iconPath": "images/icon/image.png",
+        "selectedIconPath": "images/icon/image_selected.png"
+      },
+      {
+        "pagePath": "pages/user/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/home.png",
+        "selectedIconPath": "images/icon/home_selected.png"
+      },
+      {
+        "pagePath": "pages/user/order/order",
+        "text": "下单",
+        "iconPath": "images/icon/renew.png",
+        "selectedIconPath": "images/icon/renew_selected.png"
+      },
+      {
+        "pagePath": "pages/user/userhome/userhome",
+        "text": "个人",
+        "iconPath": "images/icon/person.png",
+        "selectedIconPath": "images/icon/person-selected.png"
+      }
+    ]
+  },
+  
+  "sitemapLocation": "sitemap.json"
+}

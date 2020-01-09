@@ -1,0 +1,29 @@
+<view class='zhi'>
+  <text>品牌广告投放管理系统   </text>
+</view>
+
+<!--登录页面-->
+<view  class="content">
+  <view class="account">
+  <image class="img1" src="/images/user.png"></image>
+    <!-- <view class="title">账号：</view> -->
+    <view class="inp">
+        <input placeholder="输入账号" bindinput="usernameInput"  type="number"/>
+    </view>
+  </view>
+  <view class="account">
+  <image class="img1" src="/images/pw.png"></image>
+    <!-- <view class="title">密码：</view> -->
+    <view class="inp">
+      <input placeholder="输入密码" password="true"   bindinput="passwordInput" placeholder-style="color:#999999;"/> 
+    </view>
+  </view>
+  <view class='tuichu'>
+  <text class='right'>忘记密码</text>
+</view>
+  <view class='adbutton'>
+    <button  class='button-white' hover-class='button-blue' bindtap="login">登录</button>
+  </view>
+  <text>{{username}}</text>
+  <text>{{password}}</text>
+</view>

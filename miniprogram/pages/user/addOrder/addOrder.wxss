@@ -1,0 +1,37 @@
+
+.row{
+  display: flex;
+  flex-direction: row;
+}.box{
+  border: 2rpx solid white;
+  color:black;  /*字体颜色*/
+  box-shadow:0 1rpx 1rpx 1rpx#15161646;
+  border-radius: 3%;
+  background: white;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+}
+page{
+  background-color:#ededed;
+}
+.button-blue{
+  background-color: white;
+  color: #2577e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx;
+  box-shadow:0 3rpx 5rpx 4rpx  #2577e3;
+}
+.button-white{
+  margin: 20rpx;
+  background-color: #2577e3;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:0 3rpx 5rpx 4rpx  #2577e3;
+}
